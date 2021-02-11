@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/todo.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/mydairy.css">
+        <title>
+
+        </title>
+    </head>
+    <body onload="startTime()">
+        <header class="clearfix">
+            <div style="text-align: center;" class="container">
+                <h1>mySpace</h1> 
+                <h2 id="txt"></h2>   
+            </div>
+            
+
+            <img class="rfloat"  src="assets/pngwing.com (55).png">    
+            <!--Time or Clock-->
+            <div class="lfloat">
+                <img class="lfloat" src = "assets/pngwing.com (50).png">
+            </div>
+            
+        </header>
+        <main class="clearfix container">
+            <!--ToDo List-->
+            <aside class="todoList lfloat">
+                        <div class="row">
+                            <div class="intro col-12">
+                                <h1>Work To-Dos</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="userInput" type="text" placeholder="New item..." maxlength="27">
+                                <button id="enter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                        <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                        </div>
+                
+                        <!-- Empty List -->
+                        <div class="row">
+                            <div class="listItems col-12">
+                                <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                                </ul>
+                            </div>
+                        </div>
+                
+            </aside>
+            <!--Diary-->
+            <aside class="mydairy">
+                <div class="clearfix">
+                    <h1 class="lfloat">
+                        myDiary
+                    </h1> 
+                    <div class="rfloat colorPicker">
+                        <button style="width: 25px; height: 25px; background-color: lawngreen; border-radius: 20px; border-style: none;" id="green" onclick="colorGreen()"></button>
+                        <button style="width: 25px; height: 25px; background-color: rgb(255, 99, 99); border-radius: 20px; border-style: none;" onclick="colorRed()"></button>
+                        <button style="width: 25px; height: 25px; background-color: rgb(110, 222, 226); border-radius: 20px; border-style: none;" onclick="colorBlue()"></button>
+                        <button style="width: 25px; height: 25px; background-color: rgb(241, 248, 136); border-radius: 20px; border-style: none;" onclick="colorYellow()"></button>
+                    </div>
+                </div>
+               
+                        <textarea id="inputTextToSave" style="width: 100%;" type="text" placeholder="Enter Here"  cols="15" rows="15"></textarea>
+                        <table>
+                            <tr>
+                                <td>Filename to Save As:</td>
+                                <td><input id="inputFileNameToSaveAs"></input></td>
+                                <td><button class="saveButton" onclick="saveTextAsFile()">Save Text to File</button></td>
+                            </tr>
+                            <tr>
+                                <td>Select a File to Load:</td>
+                                <td><input type="file" id="fileToLoad">
+                                <td><button class="saveButton" onclick="loadFileAsText()">Load Selected File</button><td>
+                            </tr>
+                        </table>
+                        <div> 
+                          
+                        </div> 
+                    </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+    <script src="js/script.js"></script> 
+    <script type="text/javascript" src="js/todo.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/mydiary.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</html>

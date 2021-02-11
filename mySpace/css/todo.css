@@ -1,0 +1,98 @@
+.todoList{
+	background-color: rgb(173, 255, 234);
+	width: 35%;
+	text-align: center;
+	border-radius: 25px;
+}
+.intro {
+	font-weight: bold;
+}
+
+#first {
+	margin-top: 10px;
+	color: #FFCD5D;
+}
+
+#second {
+	color: #51DF70;
+
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+}
+
+
+#enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: rgb(173, 255, 234);
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #38cde7;
+	color: #FFCD5D;
+}
+
+.todoList ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+.todoList li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #000000;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #82e8fa;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	background: #ff7979;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+.todoList li:hover {
+	background: #fafc91;
+}
+
+.todoList li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+.todoList input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+	margin-bottom: 5px;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
