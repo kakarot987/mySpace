@@ -1,0 +1,26 @@
+.mydairy{
+    float: right; 
+    background-color: rgb(173, 255, 234); 
+    width: 60%;
+    padding: 15px;
+    border-radius: 25px;
+}
+.colorPicker{
+    margin-right: 80px;
+    background-color: rgb(252, 232, 255);
+    border-radius: 25px;
+
+}
+.colorPicker button{
+    margin: 10px;
+}
+textarea{
+    border-radius: 10px;
+}
+.saveButton{
+    border: none;
+    background-color: rgb(124, 255, 112);
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
